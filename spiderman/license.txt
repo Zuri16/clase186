@@ -1,0 +1,11 @@
+Model Information:
+* title:	Spiderman
+* source:	https://sketchfab.com/3d-models/spiderman-5b4ffad4e0f94d208f6b74aed934d320
+* author:	Kang Xuen (https://sketchfab.com/Shawnykx)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Spiderman" (https://sketchfab.com/3d-models/spiderman-5b4ffad4e0f94d208f6b74aed934d320) by Kang Xuen (https://sketchfab.com/Shawnykx) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

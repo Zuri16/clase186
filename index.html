@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<htlm>
+    <head>
+        <meta charset="utf-8">
+        <title>Fuegos artificiales</title>
+        <script src="https://aframe.io/releases/1.0.4/aframe.min.js" ></script>
+        <script src="https://unpkg.com/aframe-spe-particles-component@^1.0.4/dist/aframe-spe-particles-component.min.js" ></script>
+    </head>
+    <body>
+        <a-scene id="scene">
+            <a-assets>
+                <a-asset-item
+                  id="city"
+                  src="/san_francisco_city/scene.gltf"
+                ></a-asset-item>  
+                <a-asset-item
+                  id="spider"
+                  src="/spiderman/scene.gltf"
+                ></a-asset-item>            
+            </a-assets>
+            <a-entity>
+                <a-entity position="0 -12 0" rotation="0 0 0" scale="0.05 0.05 0.05" gltf-model="#city"></a-entity>
+            </a-entity>
+            <a-entity>
+                <a-entity position="10 -5.3 8" rotation="0 180 0" scale="2 2 2" gltf-model="#spider" animation-mixer></a-entity>
+            </a-entity>
+            <a-entity position="23 10 0" spe-particles="
+              color:blue, purple, green, pink;
+              distribution:sphere;
+              randomize-velocity:true;
+              radius:1;
+              particle-count:800;
+              velocity:1;
+              velocity-spread:15;
+              drag:1;
+              max-age:2;
+              duration:-1;
+              blending:additive;
+              active-multiplier:1000;
+              size:1,1,1,0
+            "></a-entity>
+            <a-entity position="-22 15 0" spe-particles="
+              color:orange, red, yellow, pink;
+              distribution:sphere;
+              randomize-velocity:true;
+              radius:1;
+              particle-count:800;
+              velocity:1;
+              velocity-spread:15;
+              drag:1;
+              max-age:2;
+              duration:-1;
+              blending:additive;
+              active-multiplier:1000;
+              size:1,1,1,0
+            "></a-entity>
+            <a-sky color="#000000"></a-sky>
+            <a-camera position="0 0 30"></a-camera>
+        </a-scene>
+    </body>
+</htlm>
